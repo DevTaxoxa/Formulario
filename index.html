@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu carro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>    
+    <p id="tituloDoHeader">Cadastre seu veículo para vender mais rápido!</p>
+</header>
+<body>
+    <section>
+        <form action="">
+            <h1 id="formulario">FORMULÁRIO</h1>
+            <div id="linha"></div>
+
+            <h2>Venda fácil seu carro!</h2>
+            <p id="marcarOpcionais">Descreva as características e marque os opcionais que ele possui</p>
+
+            <div class="subtitulos">
+                <p>Título do anúncio</p>
+                <input type="text" placeholder="Um título para anunciar seu carro" required>
+            </div>
+            <div class="subtitulos">
+                <p>Preço</p>
+                <input type="text" placeholder="Defina o preço" required>
+            </div>
+            <div class="subtitulos">
+                <p>Descrição</p>
+                <textarea name="desciption" id="descricao" cols="58" rows="2" required placeholder="Aqui você coloca os detalhes do veículos, por exemplo: se ele tem algum arranhão"></textarea>
+            </div>
+            <div class="subtitulos">
+                <p>Marca</p>
+                <input type="text" placeholder="Digite a marca do veículo" required>
+            </div>
+            <div class="subtitulos">    
+                <p>Modelo</p>
+                <input type="text" placeholder="Digite o modelo do veículo" required>
+            </div>
+            <div class="subtitulos">
+                <p>Kilometragem</p>
+                <input type="text" placeholder="Digite a Kilometragem do veículo" required>
+            </div>
+            <div class="subtitulos">
+                <p>Data de Compra</p>
+                <input type="date" name="data" id="data">
+            </div>
+            <div class="subtitulos">
+                <p>Opcionais</p>
+                <div class="checkbox-group">
+                    <span>
+                        <input type="checkbox" name="ab" id="airbag">
+                        <label for="ab">Airbag</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="alarme" id="alarme">
+                        <label for="alarme">Alarme</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="ac" id="ac">
+                        <label for="ac">Ar Condicionado</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="cr" id="cr">
+                        <label for="cr">Câmera de Ré</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="ap" id="ap">
+                        <label for="ap">Assistente de Pista</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="pk" id="pk">
+                        <label for="pk">Partida Keyless</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="ic" id="ic">
+                        <label for="ic">Integração com Celular</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="bc" id="bc">
+                        <label for="bc">Banco de Couro</label>
+                    </span>
+                </div>
+            </div>
+            <div class="subtitulos">
+                <p>Fotos do carro:</p>
+                <input type="file" name="filecar" id="files">
+                <label for="filecar"></label>
+            </div>
+            <div>
+                <input class="button" type="button" name="btnEnviar" value="ENVIAR">
+                <label for="btnEnviar"></label>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
